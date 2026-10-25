@@ -1,0 +1,6 @@
+'use client'
+import Link from 'next/link'
+import {asset} from '../config/brand'
+import {plans} from '../content/data'
+import {Heading,Reveal,route,type SectionProps} from './Shell'
+export function Pricing({locale,basePath}:SectionProps){const zh=locale==='zh';return <section className="kl-section kl-pricing" id="pricing"><div className="kl-container"><Heading title={zh?'简单灵活的方案':'Simple, flexible plans.'} body={zh?'选择适合当前阶段的系统，随业务一起成长。':'Choose the system that fits your stage. Scale when you\u0027re ready.'}/><Reveal className="kl-pricing-panel" duration={.7} delay={.15} y={28}><img src={asset('interior.jpg')} alt="" className="kl-pricing-bg"/><div className="kl-price-grid">{plans.map((plan,i)=><Reveal key={plan.price} delay={.25+.1*i} duration={.5} y={16} className="kl-price-card"><div><h3>{plan.name[locale]}{i===1&&<small>{zh?'热门':'POPULAR'}</small>}</h3><p>{plan.tagline[locale]}</p><div className="kl-price">{plan.price==='Custom'?(zh?'按需定制':'Custom'):plan.price}<span>/{zh?'月':'MONTH'}</span></div><Link className={`kl-button ${i===1?'kl-green':'kl-white'}`} href={route(basePath,'contact')}>{zh?'联系团队':'Get in touch'}</Link></div><ul>{plan.items.map(item=><li key={item.en}><span>✓</span>{item[locale]}</li>)}</ul></Reveal>)}</div></Reveal></div></section>}

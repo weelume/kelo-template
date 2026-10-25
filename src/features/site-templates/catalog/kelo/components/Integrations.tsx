@@ -1,0 +1,19 @@
+'use client'
+import Link from 'next/link'
+import {useEffect,useRef,useState} from 'react'
+import {useReducedMotion} from 'framer-motion'
+import {asset} from '../config/brand'
+import {integrations} from '../content/data'
+import {route,type SectionProps} from './Shell'
+export function Integrations({locale,basePath,full=false}:SectionProps&{full?:boolean}){
+ const track=useRef<HTMLDivElement>(null),paused=useRef(false),drag=useRef<{x:number;left:number}|null>(null),reduce=useReducedMotion(),[query,setQuery]=useState(''),[manualPause,setManualPause]=useState(false),zh=locale==='zh'
+ useEffect(()=>{if(full||reduce||manualPause)return;const el=track.current;if(!el)return;let raf=0,last=0
+  // 原站为每帧 0.5px；按 60fps 换算时间步长，避免高刷新率设备加速。
+  const tick=(time:number)=>{const dt=last?Math.min(time-last,50):0;last=time;if(!document.hidden&&!paused.current&&!drag.current){el.scrollLeft+=dt*.03;const span=el.scrollWidth/2;if(el.scrollLeft>=span)el.scrollLeft-=span}raf=requestAnimationFrame(tick)};raf=requestAnimationFrame(tick);return()=>cancelAnimationFrame(raf)
+ },[full,reduce,manualPause])
+ const items=full?integrations.filter(x=>(x.name+' '+x.description[locale]).toLowerCase().includes(query.toLowerCase())):[...integrations,...integrations]
+ return <section className="kl-section kl-integrations" id="integrations"><div className="kl-container"><header className="kl-split-heading"><div><h2>{zh?'与你的工具默契协作':'Works With Your Stack'}</h2><p>{zh?'即插即用 连接更多工作可能':'Plug and play with 1,000+ integrations'}</p></div>{full?<label className="kl-search"><span>{zh?'搜索集成':'Search integrations'}</span><input value={query} onChange={e=>setQuery(e.target.value)} type="search"/></label>:<div className="kl-integration-controls"><button type="button" className="kl-button kl-outline" aria-pressed={manualPause} onClick={()=>setManualPause(!manualPause)}>{manualPause?(zh?'继续滚动':'Resume'):(zh?'暂停滚动':'Pause')}</button><Link className="kl-button kl-outline" href={route(basePath,'integrations')}>{zh?'全部集成':'All Integrations'}</Link></div>}</header>
+ <div ref={track} className={full?'kl-integration-grid':'kl-integration-track'} tabIndex={full?undefined:0} aria-label={zh?'集成工具列表，可拖动和横向滚动':'Integrations, drag or scroll horizontally'} onMouseEnter={()=>{paused.current=true}} onMouseLeave={()=>{if(!drag.current)paused.current=false}} onFocus={()=>{paused.current=true}} onBlur={()=>{paused.current=false}} onPointerDown={e=>{if(full||e.pointerType==='touch'||(e.target instanceof Element&&e.target.closest('a,button')))return;const el=e.currentTarget;drag.current={x:e.clientX,left:el.scrollLeft};el.setPointerCapture(e.pointerId)}} onPointerMove={e=>{if(drag.current)e.currentTarget.scrollLeft=drag.current.left-(e.clientX-drag.current.x)}} onPointerUp={e=>{drag.current=null;if(e.currentTarget.hasPointerCapture(e.pointerId))e.currentTarget.releasePointerCapture(e.pointerId)}} onPointerCancel={()=>{drag.current=null}} onKeyDown={e=>{if(!full&&(e.key==='ArrowRight'||e.key==='ArrowLeft')){e.preventDefault();e.currentTarget.scrollBy({left:e.key==='ArrowRight'?280:-280,behavior:reduce?'instant':'smooth'})}}}>
+ {items.map((item,i)=><article key={item.id+'-'+i} id={full?item.id:undefined} className="kl-integration-card" aria-hidden={!full&&i>=integrations.length?true:undefined}><img src={asset(item.id+'.png')} alt="" draggable={false}/><h3>{item.name}</h3><p>{item.description[locale]}</p><Link draggable={false} tabIndex={!full&&i>=integrations.length?-1:undefined} href={route(basePath,'integrations')+'#'+item.id} onClick={e=>{if(drag.current)e.preventDefault()}}>{zh?'了解更多':'Learn more'}</Link></article>)}
+ </div>{full&&<p className="kl-directory-note">{items.length===0?(zh?'未找到匹配的工具。':'No matching integrations.'):(zh?'集成目录仅供演示，不会连接第三方账户。':'Demonstration directory. No third-party accounts are connected.')}</p>}</div></section>
+}

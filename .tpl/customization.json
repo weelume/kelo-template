@@ -1,0 +1,82 @@
+{
+  "$schema": "./schemas/customization.schema.json",
+  "format": "git-template-customization",
+  "formatVersion": "0.2.0",
+  "entries": [
+    {
+      "id": "brand",
+      "title": "品牌配置",
+      "description": "修改集中品牌和可选宿主适配",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/kelo/config/brand.ts",
+          "kind": "file",
+          "purpose": "品牌、年份与素材路径"
+        },
+        {
+          "path": "src/features/site-templates/catalog/kelo/host.tsx",
+          "kind": "file",
+          "purpose": "可选品牌注入"
+        }
+      ],
+      "constraints": [
+        "不保存消费方专属资料"
+      ],
+      "checks": [
+        "typecheck",
+        "lint"
+      ]
+    },
+    {
+      "id": "content",
+      "title": "双语内容与页面",
+      "description": "同步修改中英内容、集合和页面注册",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/kelo/content/data.ts",
+          "kind": "file",
+          "purpose": "双语内容集合"
+        },
+        {
+          "path": "src/features/site-templates/catalog/kelo/meta.ts",
+          "kind": "file",
+          "purpose": "页面注册"
+        }
+      ],
+      "constraints": [
+        "中英结构一致",
+        "集合长度驱动筛选与分类"
+      ],
+      "checks": [
+        "typecheck",
+        "test"
+      ]
+    },
+    {
+      "id": "theme",
+      "title": "主题与动效",
+      "description": "主题令牌、响应式与独立动效组件",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/kelo/theme.css",
+          "kind": "file",
+          "purpose": "主题、布局及降动态"
+        },
+        {
+          "path": "src/features/site-templates/catalog/kelo/components",
+          "kind": "directory",
+          "purpose": "交互与区块"
+        }
+      ],
+      "constraints": [
+        "保留键盘与减少动态设置",
+        "视频不得替换为静态图"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "build"
+      ]
+    }
+  ]
+}

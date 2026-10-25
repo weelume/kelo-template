@@ -1,0 +1,300 @@
+{
+  "reference": "https://jiro.build/templates/ai-agents-chatbots/ai-customer-support-landing-page-kelo",
+  "license": "素材商业再分发许可尚未完整核实；字体保留自身许可。",
+  "assets": [
+    {
+      "file": "hero.mp4",
+      "url": "https://cdn.jiro.build/Kelo/Hero%2003.mp4",
+      "bytes": 3677248,
+      "status": "downloaded"
+    },
+    {
+      "file": "logo.svg",
+      "url": "https://cdn.jiro.build/Kelo/Kelo%20White.svg",
+      "bytes": 3747,
+      "status": "downloaded"
+    },
+    {
+      "file": "interior.jpg",
+      "url": "https://cdn.jiro.build/Kelo/the-interior-of-a-vintage-retro-train-carriage-wit.jpg",
+      "bytes": 836367,
+      "status": "downloaded"
+    },
+    {
+      "file": "process.jpg",
+      "url": "https://cdn.jiro.build/Kelo/67594d4535b941c71eee76123efaf48a.jpg",
+      "bytes": 104505,
+      "status": "downloaded"
+    },
+    {
+      "file": "train.jpeg",
+      "url": "https://cdn.jiro.build/Kelo/interior-of-an-old-abandoned-vintage-train-carriag.jpeg",
+      "bytes": 694015,
+      "status": "downloaded"
+    },
+    {
+      "file": "desk.jpeg",
+      "url": "https://cdn.jiro.build/Kelo/a-worn-vintage-yellow-wooden-desk-sitting-in-an-op.jpeg",
+      "bytes": 541936,
+      "status": "downloaded"
+    },
+    {
+      "file": "landscape.jpg",
+      "url": "https://cdn.jiro.build/Kelo/a-breathtaking-3d-rendered-landscape-of-smooth-rol.jpg",
+      "bytes": 525204,
+      "status": "downloaded"
+    },
+    {
+      "file": "google.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      "bytes": 1906,
+      "status": "downloaded"
+    },
+    {
+      "file": "amazon.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      "bytes": 5530,
+      "status": "downloaded"
+    },
+    {
+      "file": "microsoft.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+      "bytes": 272,
+      "status": "downloaded"
+    },
+    {
+      "file": "netflix.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+      "bytes": 1118,
+      "status": "downloaded"
+    },
+    {
+      "file": "spotify.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg",
+      "bytes": 4500,
+      "status": "downloaded"
+    },
+    {
+      "file": "meta.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg",
+      "bytes": 3383,
+      "status": "downloaded"
+    },
+    {
+      "file": "apple.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+      "bytes": 660,
+      "status": "downloaded"
+    },
+    {
+      "file": "airbnb.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
+      "bytes": 3485,
+      "status": "downloaded"
+    },
+    {
+      "file": "slack.svg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg",
+      "bytes": 1912,
+      "status": "downloaded"
+    },
+    {
+      "file": "arc.png",
+      "url": "https://www.google.com/s2/favicons?domain=arc.net&sz=128",
+      "bytes": 1520,
+      "status": "downloaded"
+    },
+    {
+      "file": "notion.png",
+      "url": "https://www.google.com/s2/favicons?domain=notion.so&sz=128",
+      "bytes": 1194,
+      "status": "downloaded"
+    },
+    {
+      "file": "raycast.png",
+      "url": "https://www.google.com/s2/favicons?domain=raycast.com&sz=128",
+      "bytes": 1110,
+      "status": "downloaded"
+    },
+    {
+      "file": "loom.png",
+      "url": "https://www.google.com/s2/favicons?domain=loom.com&sz=128",
+      "bytes": 1908,
+      "status": "downloaded"
+    },
+    {
+      "file": "mailchimp.png",
+      "url": "https://www.google.com/s2/favicons?domain=mailchimp.com&sz=128",
+      "bytes": 2825,
+      "status": "downloaded"
+    },
+    {
+      "file": "lovable.png",
+      "url": "https://www.google.com/s2/favicons?domain=lovable.dev&sz=128",
+      "bytes": 2520,
+      "status": "downloaded"
+    },
+    {
+      "file": "bolt.png",
+      "url": "https://www.google.com/s2/favicons?domain=bolt.new&sz=128",
+      "bytes": 1088,
+      "status": "downloaded"
+    },
+    {
+      "file": "warp.png",
+      "url": "https://www.google.com/s2/favicons?domain=warp.dev&sz=128",
+      "bytes": 1724,
+      "status": "downloaded"
+    },
+    {
+      "file": "vscode.png",
+      "url": "https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=128",
+      "bytes": 1874,
+      "status": "downloaded"
+    },
+    {
+      "file": "nextjs.png",
+      "url": "https://www.google.com/s2/favicons?domain=nextjs.org&sz=128",
+      "bytes": 1566,
+      "status": "downloaded"
+    },
+    {
+      "file": "figma.png",
+      "url": "https://www.google.com/s2/favicons?domain=figma.com&sz=128",
+      "bytes": 1002,
+      "status": "downloaded"
+    },
+    {
+      "file": "obsidian.png",
+      "url": "https://www.google.com/s2/favicons?domain=obsidian.md&sz=128",
+      "bytes": 2129,
+      "status": "downloaded"
+    },
+    {
+      "file": "dropbox.png",
+      "url": "https://www.google.com/s2/favicons?domain=dropbox.com&sz=128",
+      "bytes": 1379,
+      "status": "downloaded"
+    },
+    {
+      "file": "zapier.png",
+      "url": "https://www.google.com/s2/favicons?domain=zapier.com&sz=128",
+      "bytes": 1799,
+      "status": "downloaded"
+    },
+    {
+      "file": "cleanshot.png",
+      "url": "https://www.google.com/s2/favicons?domain=cleanshot.com&sz=128",
+      "bytes": 1969,
+      "status": "downloaded"
+    },
+    {
+      "file": "framer.png",
+      "url": "https://www.google.com/s2/favicons?domain=framer.com&sz=128",
+      "bytes": 1394,
+      "status": "downloaded"
+    },
+    {
+      "file": "linear.png",
+      "url": "https://www.google.com/s2/favicons?domain=linear.app&sz=128",
+      "bytes": 2648,
+      "status": "downloaded"
+    },
+    {
+      "file": "discord.png",
+      "url": "https://www.google.com/s2/favicons?domain=discord.com&sz=128",
+      "bytes": 1306,
+      "status": "downloaded"
+    },
+    {
+      "file": "supabase.png",
+      "url": "https://www.google.com/s2/favicons?domain=supabase.com&sz=128",
+      "bytes": 1174,
+      "status": "downloaded"
+    },
+    {
+      "file": "craft.png",
+      "url": "https://www.google.com/s2/favicons?domain=craft.do&sz=128",
+      "bytes": 708,
+      "status": "downloaded"
+    },
+    {
+      "file": "vercel.png",
+      "url": "https://www.google.com/s2/favicons?domain=vercel.com&sz=128",
+      "bytes": 629,
+      "status": "downloaded"
+    },
+    {
+      "file": "github.png",
+      "url": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+      "bytes": 519,
+      "status": "downloaded"
+    },
+    {
+      "file": "grok.png",
+      "url": "https://www.google.com/s2/favicons?domain=x.ai&sz=128",
+      "bytes": 1095,
+      "status": "downloaded"
+    },
+    {
+      "file": "chatgpt.png",
+      "url": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+      "bytes": 1829,
+      "status": "downloaded"
+    },
+    {
+      "file": "v0.png",
+      "url": "https://www.google.com/s2/favicons?domain=v0.dev&sz=128",
+      "bytes": 1215,
+      "status": "downloaded"
+    },
+    {
+      "file": "avatar-11.jpg",
+      "url": "https://i.pravatar.cc/100?u=11",
+      "bytes": 3938,
+      "status": "downloaded"
+    },
+    {
+      "file": "avatar-12.jpg",
+      "url": "https://i.pravatar.cc/100?u=12",
+      "bytes": 3757,
+      "status": "downloaded"
+    },
+    {
+      "file": "avatar-13.jpg",
+      "url": "https://i.pravatar.cc/100?u=13",
+      "bytes": 3556,
+      "status": "downloaded"
+    },
+    {
+      "file": "avatar-14.jpg",
+      "url": "https://i.pravatar.cc/100?u=14",
+      "bytes": 2844,
+      "status": "downloaded"
+    },
+    {
+      "file": "support-47.jpg",
+      "url": "https://i.pravatar.cc/44?img=47",
+      "bytes": 1357,
+      "status": "downloaded"
+    },
+    {
+      "file": "support-12.jpg",
+      "url": "https://i.pravatar.cc/44?img=12",
+      "bytes": 1401,
+      "status": "downloaded"
+    },
+    {
+      "file": "support-33.jpg",
+      "url": "https://i.pravatar.cc/44?img=33",
+      "bytes": 1357,
+      "status": "downloaded"
+    },
+    {
+      "file": "logo-mark.svg",
+      "url": "https://cdn.jiro.build/Kelo/Kelo%20White.svg",
+      "status": "derived",
+      "description": "从原 Logo 中提取首个图形路径，配合可配置品牌文字，避免重复字标。"
+    }
+  ]
+}

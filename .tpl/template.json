@@ -1,0 +1,251 @@
+{
+  "$schema": "./schemas/template.schema.json",
+  "format": "git-template",
+  "formatVersion": "0.2.0",
+  "id": "kelo",
+  "version": "1.0.0",
+  "gitUrl": "https://github.com/weelume/kelo-template",
+  "name": "Kelo · AI 客户支持",
+  "localizedNames": {
+    "en": "Kelo · AI Customer Support"
+  },
+  "sceneId": "landing-page",
+  "listed": false,
+  "tags": [
+    "AI客服",
+    "视频背景",
+    "自动化",
+    "玻璃质感",
+    "双语"
+  ],
+  "summary": "自然列车视频与玻璃质感的 AI 客服官网，包含功能示意动效、自动化流程、可拖动集成横列、价格、分类 FAQ 与更新文章。",
+  "accentColor": "#00bc7d",
+  "cover": "assets/desktop-home.webp",
+  "screenshots": [
+    {
+      "src": "assets/desktop-home.webp",
+      "alt": "Kelo desktop home",
+      "device": "desktop",
+      "width": 1425,
+      "height": 990,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/desktop-features.webp",
+      "alt": "Kelo desktop features",
+      "device": "desktop",
+      "width": 1425,
+      "height": 990,
+      "surfaceId": "site",
+      "pageSlug": "features"
+    },
+    {
+      "src": "assets/desktop-blog.webp",
+      "alt": "Kelo desktop blog",
+      "device": "desktop",
+      "width": 1425,
+      "height": 990,
+      "surfaceId": "site",
+      "pageSlug": "blog"
+    },
+    {
+      "src": "assets/desktop-contact.webp",
+      "alt": "Kelo desktop contact",
+      "device": "desktop",
+      "width": 1425,
+      "height": 990,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    },
+    {
+      "src": "assets/tablet-home.webp",
+      "alt": "Kelo tablet home",
+      "device": "tablet",
+      "width": 819,
+      "height": 1159,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/tablet-features.webp",
+      "alt": "Kelo tablet features",
+      "device": "tablet",
+      "width": 819,
+      "height": 1159,
+      "surfaceId": "site",
+      "pageSlug": "features"
+    },
+    {
+      "src": "assets/tablet-blog.webp",
+      "alt": "Kelo tablet blog",
+      "device": "tablet",
+      "width": 819,
+      "height": 1159,
+      "surfaceId": "site",
+      "pageSlug": "blog"
+    },
+    {
+      "src": "assets/tablet-contact.webp",
+      "alt": "Kelo tablet contact",
+      "device": "tablet",
+      "width": 819,
+      "height": 1159,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    },
+    {
+      "src": "assets/mobile-home.webp",
+      "alt": "Kelo mobile home",
+      "device": "mobile",
+      "width": 375,
+      "height": 812,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/mobile-features.webp",
+      "alt": "Kelo mobile features",
+      "device": "mobile",
+      "width": 375,
+      "height": 812,
+      "surfaceId": "site",
+      "pageSlug": "features"
+    },
+    {
+      "src": "assets/mobile-blog.webp",
+      "alt": "Kelo mobile blog",
+      "device": "mobile",
+      "width": 375,
+      "height": 812,
+      "surfaceId": "site",
+      "pageSlug": "blog"
+    },
+    {
+      "src": "assets/mobile-contact.webp",
+      "alt": "Kelo mobile contact",
+      "device": "mobile",
+      "width": 375,
+      "height": 812,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "site",
+      "name": "官网",
+      "platform": "pc",
+      "locales": [
+        "zh",
+        "en"
+      ],
+      "pages": [
+        {
+          "slug": "",
+          "title": "首页",
+          "localizedTitles": {
+            "en": "Home"
+          }
+        },
+        {
+          "slug": "features",
+          "title": "产品功能",
+          "localizedTitles": {
+            "en": "Features"
+          }
+        },
+        {
+          "slug": "solutions",
+          "title": "解决方案",
+          "localizedTitles": {
+            "en": "Solutions"
+          }
+        },
+        {
+          "slug": "integrations",
+          "title": "集成目录",
+          "localizedTitles": {
+            "en": "Integrations"
+          }
+        },
+        {
+          "slug": "pricing",
+          "title": "价格方案",
+          "localizedTitles": {
+            "en": "Pricing"
+          }
+        },
+        {
+          "slug": "faq",
+          "title": "帮助中心",
+          "localizedTitles": {
+            "en": "Help Center"
+          }
+        },
+        {
+          "slug": "about",
+          "title": "关于我们",
+          "localizedTitles": {
+            "en": "About"
+          }
+        },
+        {
+          "slug": "blog",
+          "title": "更新与洞察",
+          "localizedTitles": {
+            "en": "Updates & Insights"
+          }
+        },
+        {
+          "slug": "blog/building-kelo",
+          "title": "构建 Kelo 自动化",
+          "localizedTitles": {
+            "en": "Building Kelo Automation"
+          }
+        },
+        {
+          "slug": "blog/sales-metrics",
+          "title": "关键销售指标",
+          "localizedTitles": {
+            "en": "Sales Metrics"
+          }
+        },
+        {
+          "slug": "blog/crm-simplicity",
+          "title": "简化 CRM",
+          "localizedTitles": {
+            "en": "CRM Simplicity"
+          }
+        },
+        {
+          "slug": "contact",
+          "title": "联系我们",
+          "localizedTitles": {
+            "en": "Contact"
+          }
+        },
+        {
+          "slug": "privacy",
+          "title": "隐私政策",
+          "localizedTitles": {
+            "en": "Privacy Policy"
+          }
+        },
+        {
+          "slug": "terms",
+          "title": "服务条款",
+          "localizedTitles": {
+            "en": "Terms of Service"
+          }
+        }
+      ]
+    }
+  ],
+  "license": {
+    "type": "restricted",
+    "file": "docs/LICENSE.md",
+    "summary": "参考图片、视频和第三方标记的商业再分发许可尚未核实；字体保留自身许可。",
+    "redistributionAllowed": false
+  }
+}

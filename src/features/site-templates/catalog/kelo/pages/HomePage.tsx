@@ -1,0 +1,10 @@
+import type {SiteTemplatePageProps} from '../../../types'
+import {Shell} from '../components/Shell'
+import {Hero} from '../components/Hero'
+import {Features} from '../components/Features'
+import {Steps} from '../components/Steps'
+import {Integrations} from '../components/Integrations'
+import {Pricing} from '../components/Pricing'
+import {Faq} from '../components/Faq'
+import {Blog} from '../components/Blog'
+export default function HomePage({locale='zh',basePath}:SiteTemplatePageProps){const props={locale,basePath};return <Shell {...props} hero><Hero {...props}/><Features {...props}/><Steps {...props}/><Integrations {...props}/><Pricing {...props}/><Faq {...props}/><Blog {...props}/></Shell>}
